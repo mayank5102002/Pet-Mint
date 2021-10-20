@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_navigation"
+    app:startDestination="@id/myAccount">
+
+    <fragment
+        android:id="@+id/myAccount"
+        android:name="com.leafcode.petmint.myAccount.MyAccount"
+        android:label="my_account_fragment"
+        tools:layout="@layout/my_account_fragment" >
+        <action
+            android:id="@+id/action_myAccount_to_signOutActivity"
+            app:destination="@id/signOutActivity"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_myAccount_to_helpandSupportActivity"
+            app:destination="@id/helpandSupportActivity"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_myAccount_to_settingsActivity"
+            app:destination="@id/settingsActivity"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <activity
+        android:id="@+id/signOutActivity"
+        android:name="com.leafcode.petmint.signOut.SignOutActivity"
+        android:label="activity_sign_out"
+        tools:layout="@layout/activity_sign_out" />
+    <activity
+        android:id="@+id/helpandSupportActivity"
+        android:name="com.leafcode.petmint.helpandsupport.HelpandSupportActivity"
+        android:label="activity_help_support"
+        tools:layout="@layout/activity_help_support" />
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.leafcode.petmint.settings.SettingsActivity"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+</navigation>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_navigation"
+    app:startDestination="@id/settingsFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.leafcode.petmint.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_userNameChange"
+            app:destination="@id/userNameChange"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_settingsFragment_to_emailChange"
+            app:destination="@id/emailChange"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_settingsFragment_to_passwordChange"
+            app:destination="@id/passwordChange"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_settingsFragment_to_profilePicChange"
+            app:destination="@id/profilePicChange"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/userNameChange"
+        android:name="com.leafcode.petmint.settings.UserNameChange"
+        android:label="fragment_user_name_change"
+        tools:layout="@layout/fragment_user_name_change" />
+    <fragment
+        android:id="@+id/emailChange"
+        android:name="com.leafcode.petmint.settings.EmailChange"
+        android:label="fragment_email_change"
+        tools:layout="@layout/fragment_email_change" />
+    <fragment
+        android:id="@+id/passwordChange"
+        android:name="com.leafcode.petmint.settings.PasswordChange"
+        android:label="fragment_password_change"
+        tools:layout="@layout/fragment_password_change" >
+    </fragment>
+    <fragment
+        android:id="@+id/profilePicChange"
+        android:name="com.leafcode.petmint.settings.ProfilePicChange"
+        android:label="fragment_profile_pic_change"
+        tools:layout="@layout/fragment_profile_pic_change" />
+</navigation>

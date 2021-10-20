@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_pet_navigation"
+    app:startDestination="@id/newPetDetailsFragment">
+
+    <fragment
+        android:id="@+id/newPetDetailsFragment"
+        android:name="com.leafcode.petmint.newpet.NewPetDetailsFragment"
+        android:label="fragment_new_pet_details"
+        tools:layout="@layout/fragment_new_pet_details" >
+        <action
+            android:id="@+id/action_newPetDetailsFragment_to_ownerInfoFragment"
+            app:destination="@id/ownerInfoFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ownerInfoFragment"
+        android:name="com.leafcode.petmint.newpet.OwnerInfoFragment"
+        android:label="fragment_owner_info"
+        tools:layout="@layout/fragment_owner_info" >
+        <action
+            android:id="@+id/action_ownerInfoFragment_to_imageSelectionFragment"
+            app:destination="@id/imageSelectionFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_ownerInfoFragment_to_locationSelectorActivity"
+            app:destination="@id/locationSelectorActivity"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/imageSelectionFragment"
+        android:name="com.leafcode.petmint.newpet.ImageSelectionFragment"
+        android:label="fragment_image_selection"
+        tools:layout="@layout/fragment_image_selection" />
+    <activity
+        android:id="@+id/locationSelectorActivity"
+        android:name="com.leafcode.petmint.locationSelector.LocationSelectorActivity"
+        android:label="activity_location_selector"
+        tools:layout="@layout/activity_location_selector" />
+</navigation>

@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Pet Mint</string>
+    <string name="splash_page_loading">Loading…</string>
+    <string name="my_account">Account</string>
+    <string name="my_pets">Pet Place</string>
+    <string name="my_ads">My Pets</string>
+    <string name="signoutdialogTitle">Sign Out</string>
+    <string name="signoutdialogMessage">Do you really want to sign out?</string>
+    <string name="deleteaccountdialogTitle">Delete Account</string>
+    <string name="deleteaccountdialogMessage_1">Do you really want to delete your account?</string>
+    <string name="deleteaccountdialogMessage_2">All the data related to the account will also be deleted!</string>
+    <string name="userNameTextview">Mayank</string>
+    <string name="settingsButtonString">Settings</string>
+    <string name="helpButtonString">Help &amp; Support</string>
+    <string name="signOutButtonString">Log out</string>
+    <string name="deleteAccountButtonString">Log out and delete account</string>
+    <string name="report_bug">Report Bug</string>
+    <string name="review_String">Submit Review</string>
+    <string name="about_us_String">About Us</string>
+    <string name="submit_button">Submit</string>
+    <string name="next_button">Next</string>
+    <string name="post_button">Post</string>
+    <string name="change_name_button">Change User name</string>
+    <string name="change_email_button">Change Email</string>
+    <string name="change_password_button">Change Password</string>
+    <string name="change_profile_pic_button">Change Profile Picture</string>
+    <string name="reset_password_button">Reset Password</string>
+    <string name="reset_password_dialog_title">Do you want to reset your password?</string>
+    <string name="location_button"><u>Select Location</u></string>
+    <string name="union_territory_string">Union territory :</string>
+    <string name="city_label_string">City :</string>
+    <string name="state_label_string">State :</string>
+    <string name="place_label_string">Place :</string>
+    <string name="final_post_question">Do you really want to post this?</string>
+    <string name="empty_list_view_string">Uh-Oh! Seems like no pets are available for adoption</string>
+    <string name="myads_empty_list_view_string1">Seems like you haven\'t put up</string>
+    <string name="myads_empty_list_view_string2">any pets for adoption</string>
+    <string name="country_string">India</string>
+    <string name="country_city_string">All in India</string>
+    <string name="call_owner_button">Call</string>
+
+    <string name="error_occured_string">An error occurred, please refresh</string>
+
+    //Shared Preferences File names
+    <string name="starterDialogPreferences">dialogboxPreferences</string>
+    <string name="starterDialogBoxSeen">ifdialogboxSeen</string>
+    <string name="location_preferences">locationPreferences</string>
+    <string name="new_pet_city">newPetCity</string>
+    <string name="new_pet_state">newPetState</string>
+    <string name="search_location_city">searchCity</string>
+    <string name="search_location_state">searchState</string>
+    <string name="location_type">locationType</string>
+    <string name="isSearchLocationUnionTerritory">isSearchLocationUnionTerritory</string>
+    <string name="isNewPetUnionTerritory">isNewPetUnionTerritory</string>
+
+
+    <string-array name="animal_types">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Bird</item>
+        <item>Others</item>
+    </string-array>
+
+    //Firebase database location names
+    <string name="review_location">Reviews</string>
+    <string name="bug_report_location">Bug Reports</string>
+    <string name="users_location">Users</string>
+
+    <!--    Credits-->
+    <string name="credits_1">Pet Mint is an app for helping people to adopt pets such as dogs, cats, birds or any other
+     pets as per their requirement. This app promotes adopting pets instead of buying them from any pet shop with its moto as
+        <u>"Adopt, don't shop"</u>.</string>
+
+    <string name="credits_2"><u>Note:</u> We strictly prohibit anyone from selling pets on this platform. This app is strictly
+    for voluntarily adoption of pets and not selling of any kind.</string>
+
+    <string name="credits_3">This app is published under the company name   <u>Leaf Code</u>   and thus all the rights to it belongs to
+        the   <u>Leaf Code</u>   only. Any kind of unfair use of its content will not be appreciated.</string>
+
+    <string name="credits_4">Contact Us</string>
+    <string name="credits_5">Whatsapp : +91 8569822464</string>
+    <string name="credits_6">Email :  leafcodeandev@gmail.com         </string>
+
+
+    <string name="details_menu_delete">Delete</string>
+
+    <!-- Title and value for Beta Version dialog box -->
+    <string name="betaVersionAlertDialogTitle">Note</string>
+    <string name="betaVersionAlertDialogContent">This app is currently in Beta version <u>v1.0.2</u> further updates will be rolled
+     out soon meanwhile, you can report any errors you spot in the Help &amp; Support section</string>
+
+    //Ad Unit IDs
+    <string name="detailsActivityAdID">ca-app-pub-5825309536048570/2202271401</string>
+    <string name="settingsActivityAdID">ca-app-pub-5825309536048570/6835666897</string>
+    <string name="helpSupportActivityAdID">ca-app-pub-5825309536048570/3515353071</string>
+    <string name="logoutActivityAdID">ca-app-pub-5825309536048570/7062897609</string>
+    <string name="demoAdID">ca-app-pub-3940256099942544/6300978111</string>
+
+
+</resources>

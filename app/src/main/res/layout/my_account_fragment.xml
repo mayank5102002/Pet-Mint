@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".myAccount.MyAccount">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/shape_layout"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="32dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myCardView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/account_dp"
+        tools:ignore="ContentDescription"
+        android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userNameTextview"
+        android:layout_toEndOf="@id/shape_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/proxima_nova"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/shape_layout"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/settingsLayoutButton">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            style="@style/settings_button"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="0"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settingsButtonString"
+            android:textSize="25sp"
+            android:fontFamily="@font/proxima_nova"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            style="@style/enter_arrow"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/helpLayoutButton"
+        android:layout_below="@id/settingsLayoutButton">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            style="@style/help_iamge"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="0"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/helpButtonString"
+            android:textSize="25sp"
+            android:fontFamily="@font/proxima_nova"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            style="@style/enter_arrow"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/signoutLayoutButton"
+        android:layout_below="@id/helpLayoutButton">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            style="@style/ic_action_signout"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="0"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/signOutButtonString"
+            android:textSize="25sp"
+            android:fontFamily="@font/proxima_nova"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            style="@style/enter_arrow"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="0"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

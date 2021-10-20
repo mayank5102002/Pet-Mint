@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/help_support_navigation"
+    app:startDestination="@id/helpSupportFragment">
+
+    <fragment
+        android:id="@+id/helpSupportFragment"
+        android:name="com.leafcode.petmint.helpandsupport.HelpSupportFragment"
+        android:label="fragment_help_support"
+        tools:layout="@layout/fragment_help_support" >
+        <action
+            android:id="@+id/action_helpSupportFragment_to_reportBugFragment"
+            app:destination="@id/reportBugFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_helpSupportFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_helpSupportFragment_to_creditsFragment"
+            app:destination="@id/creditsFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/reportBugFragment"
+        android:name="com.leafcode.petmint.helpandsupport.ReportBugFragment"
+        android:label="fragment_report_bug"
+        tools:layout="@layout/fragment_report_bug" />
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.leafcode.petmint.helpandsupport.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review" />
+    <fragment
+        android:id="@+id/creditsFragment"
+        android:name="com.leafcode.petmint.helpandsupport.CreditsFragment"
+        android:label="fragment_credits"
+        tools:layout="@layout/fragment_credits" />
+</navigation>

@@ -1,0 +1,87 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PetAdopt" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/teal_200</item>
+        <item name="colorPrimaryVariant">@color/teal_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="new_pet_text_style">
+        <item name="fontFamily">@font/proxima_nova</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="pet_details_text_style">
+        <item name="fontFamily">@font/proxima_nova</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="account_dp">
+        <item name="srcCompat">@drawable/account_dp</item>
+    </style>
+
+    <style name="settings_button">
+        <item name="srcCompat">@drawable/settings_image</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:fillColor">@color/white</item>
+    </style>
+
+    <style name="add_button">
+        <item name="srcCompat">@drawable/add_button_image</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:fillColor">@color/white</item>
+    </style>
+
+    <style name="delete_account_button">
+        <item name="srcCompat">@drawable/delete_account_image</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:fillColor">@color/white</item>
+    </style>
+
+    <style name="dotted_rectangle">
+        <item name="srcCompat">@drawable/add_button_image</item>
+        <item name="android:foreground">@drawable/dotted_rectangle</item>
+    </style>
+
+    <style name="enter_arrow">
+        <item name="srcCompat">@drawable/enter_arrow</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:fillColor">@color/white</item>
+    </style>
+
+    <style name="help_iamge">
+        <item name="srcCompat">@drawable/help_image</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:fillColor">@color/white</item>
+    </style>
+
+    <style name="ic_action_signout">
+        <item name="srcCompat">@drawable/ic_action_signout</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:fillColor">@color/white</item>
+    </style>
+
+    <style name="rectangle">
+        <item name="android:background">@drawable/rectangle</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:fillColor">@color/white</item>
+        <item name="fontFamily">@font/proxima_nova</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="error_icon">
+        <item name="srcCompat">@drawable/error_icon</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:fillColor">@color/white</item>
+    </style>
+
+</resources>

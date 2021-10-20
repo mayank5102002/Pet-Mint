@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/location_selector_navigation"
+    app:startDestination="@id/stateSelectorFragment">
+
+    <fragment
+        android:id="@+id/stateSelectorFragment"
+        android:name="com.leafcode.petmint.locationSelector.StateSelectorFragment"
+        android:label="fragment_state_selector"
+        tools:layout="@layout/fragment_state_selector" >
+        <action
+            android:id="@+id/action_stateSelectorFragment_to_citySelectorFragment"
+            app:destination="@id/citySelectorFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/citySelectorFragment"
+        android:name="com.leafcode.petmint.locationSelector.CitySelectorFragment"
+        android:label="fragment_city_selector"
+        tools:layout="@layout/fragment_city_selector" >
+        <argument
+            android:name="cities"
+            app:argType="string[]" />
+    </fragment>
+</navigation>
